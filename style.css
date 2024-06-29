@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#username {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#username:focus {
+    border-color: #0366d6; /* GitHub link color */
+    outline: none;
+}
+
+#searchBtn, #backBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchBtn:hover, #backBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#userInfo, #userRepos {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#userInfo img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#userInfo img:hover {
+    transform: scale(1.1);
+}
+
+#userRepos {
+    margin-top: 20px;
+}
+
+#userRepos div {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#userRepos div:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#userRepos a {
+    text-decoration: none;
+    color: #0366d6; /* GitHub link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#userRepos a:hover {
+    text-decoration: underline;
+    color: #024ea4; /* Darker shade for hover */
+}
+
+#userInfo p, #userRepos p {
+    margin: 5px 0;
+}
+
+#backBtn {
+    display: none;
+    margin-top: 20px;
+    background-color: #0366d6; /* GitHub link color */
+}
+
+#backBtn:hover {
+    background-color: #024ea4; /* Darker shade for hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #username {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    #searchBtn {
+        width: 100%;
+    }
+
+    #backBtn {
+        width: 100%;
+    }
+}
